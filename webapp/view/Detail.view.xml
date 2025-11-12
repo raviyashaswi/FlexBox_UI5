@@ -1,0 +1,44 @@
+<mvc:View controllerName="mvsplit.controller.Detail" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout.form"
+    xmlns="sap.m">
+    <App id="_IDGenApp">
+        <Page id="_IDGenPage" title="{name} Details" floatingFooter="true">
+            <headerContent >
+                <Button id="_IDGenButtonEdit" icon="sap-icon://edit" press=".Edit"/>
+                <Button id="_IDGenButton" icon="sap-icon://delete" press=".Delete"/>
+            </headerContent>
+            <content>
+                <l:SimpleForm id="RemoteForm"  editable="false" layout="ResponsiveGridLayout">
+                    <Label id="_IDGenLabel1" text="id"/>
+                    <Text id="_IDGenText"  text="{id}"  visible="true" />
+
+                    <Label id="_IDGenLabel2" text="price" />
+                    <Text id="_IDGenText1" text="{editJSON>/price}" visible="{= ${tempJSON>/v} === false}" />
+                    <Input id="_IDGenInput2" value="{editJSON>/price}" visible="{= ${tempJSON>/v} === true}"/>
+
+                    <Label id="_IDGenLabel3" text="category" />
+                    <Text id="_IDGenText2" text="{editJSON>/category}" visible="{= ${tempJSON>/v} === false}"/>
+                    <Input id="_IDGenInput3" value="{editJSON>/category}" visible="{= ${tempJSON>/v} === true}"/>
+
+                    <Label id="_IDGenLabel4" text="supplier" />
+                    <Text id="_IDGenText3" text="{editJSON>/supplier}" visible="{= ${tempJSON>/v} === false}"/>
+                    <Input id="_IDGenInput4" value="{editJSON>/supplier}" visible="{= ${tempJSON>/v} === true}"/>
+
+                    <Label id="_IDGenLabel5" text="description" />
+                    <Text id="_IDGenText4" text="{editJSON>/description}" visible="{= ${tempJSON>/v} === false}"/>
+                    <Input id="_IDGenInput5" value="{editJSON>/description}" visible="{= ${tempJSON>/v} === true}"/>
+
+
+                </l:SimpleForm>
+            </content>
+            <footer>
+                <OverflowToolbar id="_IDGenOverflowToolbar2" visible="{= ${tempJSON>/v} === true}">
+                    <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                    <Button id="_IDGenButton4" type="Accept" text="Save" press=".Save"/>
+                    <Button id="_IDGenButton5" type="Reject" text="Cancel" press=".Cancel"/>
+                </OverflowToolbar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>

@@ -1,0 +1,121 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "mvsplit",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.19.3",
+      "toolsId": "295691e1-dfe8-4974-b924-0db3b5468841"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.142.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "mvsplit.i18n.i18n"
+        }
+      },
+      "productJSON": {
+            "type": "sap.ui.model.json.JSONModel",
+            "uri": "model/data.json"
+        },
+      "tempJSON":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"model/temp.json"
+      },
+      "editJSON":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"model/edit.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "mvsplit.view",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "RouteMaster",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMaster"
+          ]
+        },
+        {
+          "name": "RouteDetail",
+          "pattern": "Detail/{ID}",
+          "target":"TargetDetail"
+        }
+      ],
+      "targets": {
+        "TargetMaster": {
+          "id": "Master",
+          "name": "Master"
+        },
+          "TargetDetail":{
+            "id": "Detail",
+            "name":"Detail"
+        }
+
+      }
+
+    },
+    "rootView": {
+      "viewName": "mvsplit.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

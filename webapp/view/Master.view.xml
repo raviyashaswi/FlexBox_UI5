@@ -1,0 +1,27 @@
+<mvc:View controllerName="mvsplit.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <l:VerticalLayout id="_IDGenVerticalLayout1" width="100%">
+            <FlexBox id="_IDGenFlexBox" class="columns" height="100%">
+                <ScrollContainer id="_IDGenScrollContainer" height="100%" vertical="true">
+                    <List id="_IDGenList" items="{productJSON>/products}" itemPress=".onListItemPress">
+                        <items >
+                            <ObjectListItem id="_IDGenObjectListItem" title="{productJSON>name}" type="Navigation">
+                            </ObjectListItem>
+                        </items>
+                        <layoutData>
+                            <FlexItemData id="_IDGenFlexItemData1" growFactor="2" baseSize="40%" minWidth="40%" shrinkFactor="0" backgroundDesign="Solid" styleClass="sapUiTinyMargin" />
+                        </layoutData>
+                    </List>
+                </ScrollContainer>
+                <mvc:XMLView id="detailView" viewName="mvsplit.view.Detail">
+                    <mvc:layoutData>
+                        <FlexItemData id="_IDGenFlexItemData2" growFactor="3" baseSize="60%" minWidth="60%" shrinkFactor="1" backgroundDesign="Solid" styleClass="sapUiTinyMargin" />
+                    </mvc:layoutData>
+                </mvc:XMLView>
+            </FlexBox>
+        </l:VerticalLayout>
+    </Page>
+</mvc:View>

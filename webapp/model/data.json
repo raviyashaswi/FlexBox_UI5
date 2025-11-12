@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Pro 15",
+      "price": 1499,
+      "category": "Computing",
+      "stock": 25,
+      "supplier": "TechCorp",
+      "imageUrl": "images/laptop.jpg",
+      "description": "A high-performance laptop for professionals and creatives. Features a stunning 15-inch display and next-gen processors."
+    },
+    {
+      "id": "2",
+      "name": "Ergo Wireless Mouse",
+      "price": 45,
+      "category": "Peripherals",
+      "stock": 120,
+      "supplier": "ClickTech",
+      "imageUrl": "images/mouse.jpg",
+      "description": "Ergonomic wireless mouse designed for all-day comfort. Features silent clicks and a precision sensor."
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "price": 95,
+      "category": "Peripherals",
+      "stock": 60,
+      "supplier": "KeyMasters",
+      "imageUrl": "images/keyboard.jpg",
+      "description": "A full-sized mechanical keyboard with tactile switches and customizable RGB backlighting."
+    },
+    {
+      "id": "4",
+      "name": "UltraWide Monitor",
+      "price": 399,
+      "category": "Displays",
+      "stock": 35,
+      "supplier": "ViewBright",
+      "imageUrl": "images/monitor.jpg",
+      "description": "34-inch UltraWide QHD monitor, perfect for multitasking and immersive gaming."
+    },
+    {
+      "id": "5",
+      "name": "HD Webcam",
+      "price": 59,
+      "category": "Peripherals",
+      "stock": 90,
+      "supplier": "StreamCo",
+      "imageUrl": "images/webcam.jpg",
+      "description": "1080p HD Webcam with a wide-angle lens and dual-microphone array for clear video calls."
+    },
+    {
+      "id": "6",
+      "name": "USB-C Docking Station",
+      "price": 120,
+      "category": "Accessories",
+      "stock": 45,
+      "supplier": "ConnectAll",
+      "imageUrl": "images/dock.jpg",
+      "description": "Expand your laptop's connectivity with this 8-in-1 USB-C hub. Includes HDMI, Ethernet, and 3x USB 3.0 ports."
+    },
+    {
+      "id": "7",
+      "name": "Gaming Headset",
+      "price": 79,
+      "category": "Peripherals",
+      "stock": 75,
+      "supplier": "StreamCo",
+      "imageUrl": "images/headset.jpg",
+      "description": "Over-ear gaming headset with 7.1 surround sound and a noise-cancelling mic."
+    },
+    {
+      "id": "8",
+      "name": "Laptop Stand",
+      "price": 29,
+      "category": "Accessories",
+      "stock": 150,
+      "supplier": "ErgoWorks",
+      "imageUrl": "images/stand.jpg",
+      "description": "Adjustable aluminum laptop stand to improve ergonomics and cooling."
+    },
+    {
+      "id": "9",
+      "name": "2TB External SSD",
+      "price": 159,
+      "category": "Storage",
+      "stock": 80,
+      "supplier": "DataSafe",
+      "imageUrl": "images/ssd.jpg",
+      "description": "Blazing fast 2TB portable SSD with USB-C for quick file transfers."
+    },
+    {
+      "id": "10",
+      "name": "27-inch 4K Monitor",
+      "price": 299,
+      "category": "Displays",
+      "stock": 50,
+      "supplier": "ViewBright",
+      "imageUrl": "images/monitor27.jpg",
+      "description": "A crisp 27-inch 4K IPS panel for color-accurate work and vibrant media."
+    },
+    {
+      "id": "11",
+      "name": "WiFi 6 Router",
+      "price": 159,
+      "category": "Networking",
+      "stock": 40,
+      "supplier": "ConnectAll",
+      "imageUrl": "images/router.jpg",
+      "description": "Next-generation WiFi 6 mesh router for high-speed, stable internet."
+    },
+    {
+      "id": "12",
+      "name": "Portable Bluetooth Speaker",
+      "price": 65,
+      "category": "Audio",
+      "stock": 95,
+      "supplier": "AudioPhile",
+      "imageUrl": "images/speaker.jpg",
+      "description": "Waterproof (IPX7) portable speaker with 12-hour battery life and deep bass."
+    },
+    {
+      "id": "13",
+      "name": "Braided USB-C Cable (2m)",
+      "price": 15,
+      "category": "Accessories",
+      "stock": 250,
+      "supplier": "ConnectAll",
+      "imageUrl": "images/cable.jpg",
+      "description": "Durable nylon braided USB-C to USB-C cable for 100W charging and data."
+    },
+    {
+      "id": "14",
+      "name": "Gaming Desktop PC",
+      "price": 2100,
+      "category": "Computing",
+      "stock": 15,
+      "supplier": "TechCorp",
+      "imageUrl": "images/desktop.jpg",
+      "description": "High-end gaming desktop with liquid cooling, 32GB RAM, and a top-tier GPU."
+    },
+    {
+      "id": "15",
+      "name": "Large Mouse Mat",
+      "price": 20,
+      "category": "Peripherals",
+      "stock": 200,
+      "supplier": "KeyMasters",
+      "imageUrl": "images/mousemat.jpg",
+      "description": "Extended desk mouse mat (900x400mm) with a smooth glide surface."
+    },
+    {
+      "id": "16",
+      "name": "Laptop Backpack",
+      "price": 55,
+      "category": "Accessories",
+      "stock": 110,
+      "supplier": "TechGear",
+      "imageUrl": "images/backpack.jpg",
+      "description": "Water-resistant smart backpack with a 15.6-inch padded sleeve and USB charging port."
+    }
+  ]
+}
